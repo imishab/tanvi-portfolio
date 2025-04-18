@@ -39,6 +39,13 @@ Primary use:	Showcase Portfolio
 	font-weight: normal;
 	font-style: normal;
   }
+
+  @font-face {
+	font-family: 'third'; /* Choose a custom name */
+	/* src: url('fonts/secondary.otf') format('truetype'); */
+	font-weight: normal;
+	font-style: normal;
+  }
   .text-primary{
 	font-family: 'primary', sans-serif !important; /* Apply the font */
 
@@ -47,6 +54,13 @@ Primary use:	Showcase Portfolio
   .text-secondary{
 	font-family: 'secondary', sans-serif !important; /* Apply the font */
 
+  }
+
+  .text-third{
+	font-family: 'third', sans-serif !important; /* Apply the font */
+	text-transform: uppercase !important;
+font-weight: 200 !important;
+font-size: 13px !important;
   }
   .logo-text{
 	font-size:50px !important;
