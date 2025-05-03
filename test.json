@@ -1,0 +1,61 @@
+{
+  "_id": {
+    "$oid": "68109b48b7bef30fa3a3c853"
+  },
+  "name": "TVC - Elance",
+  "bussiness_category": "Education",
+  "wallet": {
+    "balance": {
+      "$numberDecimal": "0.0"
+    },
+    "threshold": {
+      "$numberDecimal": "20.0"
+    },
+    "minmum_balance": {
+      "$numberDecimal": "0.0"
+    }
+  },
+  "credit": {
+    "whatsapp": 0,
+    "sms": 0,
+    "email": 0
+  },
+  "cap_amount": {
+    "$numberDecimal": "2"
+  },
+  "gupshup": {
+    "cost": {
+      "marketing": {
+        "$numberDecimal": "0.76"
+      },
+      "utility": {
+        "$numberDecimal": "0.33"
+      },
+      "authentication": {
+        "$numberDecimal": "0.353"
+      },
+      "service": {
+        "$numberDecimal": "0.32"
+      }
+    },
+    "apps": [
+        {
+          "id": "6b7a15e4-14d6-4997-8b53-b1b52a52090b",
+          "branches": [
+            "6736e856590e1e7bc2bf03d3"
+          ],
+          "phone": "91709221373",
+          "app_token": "sk_8f59bb751e9a405a9320398ad3700a9b",
+          "app_name": "organisation6736e7b7590e1e7bc2bf03a6"
+        }
+      ]
+  },
+  "shared_waba_phones": [],
+  "created_at": {
+    "$date": "2025-04-29T09:28:12.553Z"
+  },
+  "updated_at": {
+    "$date": "2025-04-29T09:28:12.553Z"
+  },
+  "__v": 0
+}

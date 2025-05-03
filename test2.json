@@ -1,0 +1,73 @@
+{
+    "_id": {
+      "$oid": "6736e7b7590e1e7bc2bf03a6"
+    },
+    "name": "Creamstory",
+    "bussiness_category": "Restaurants",
+    "wallet": {
+      "balance": {
+        "$numberDecimal": "9.549000000000017"
+      },
+      "threshold": {
+        "$numberDecimal": "20.0"
+      },
+      "minmum_balance": {
+        "$numberDecimal": "0.0"
+      }
+    },
+    "credit": {
+      "whatsapp": 0,
+      "sms": 1000,
+      "email": 1000
+    },
+    "cap_amount": {
+      "$numberDecimal": "2"
+    },
+    "gupshup": {
+      "cost": {
+        "marketing": {
+          "$numberDecimal": "0.76"
+        },
+        "utility": {
+          "$numberDecimal": "0.33"
+        },
+        "authentication": {
+          "$numberDecimal": "0.353"
+        },
+        "service": {
+          "$numberDecimal": "0.32"
+        }
+      },
+      "apps": [
+        {
+          "id": "6b7a15e4-14d6-4997-8b53-b1b52a52090b",
+          "branches": [
+            "6736e856590e1e7bc2bf03d3"
+          ],
+          "phone": "91709221373",
+          "app_token": "sk_8f59bb751e9a405a9320398ad3700a9b",
+          "app_name": "organisation6736e7b7590e1e7bc2bf03a6"
+        }
+      ]
+    },
+    "shared_waba_id": "451985851322164",
+    "shared_waba_phones": [
+      {
+        "verified_name": "Cream Story",
+        "code_verification_status": "VERIFIED",
+        "display_phone_number": "+91 70922 21373",
+        "quality_rating": "GREEN",
+        "platform_type": "CLOUD_API",
+        "last_onboarded_time": "2024-09-08T07:43:56+0000",
+        "id": "457354644133622",
+        "_id": {
+          "$oid": "66dd55cc1d08cd2ae8aa3a0e"
+        }
+      }
+    ],
+    "__v": 0,
+    "whats_app_messaging_limit_tier": "TIER_10K",
+    "created_at": {
+      "$date": "2024-12-16T08:47:13.184Z"
+    }
+  }

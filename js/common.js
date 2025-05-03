@@ -668,7 +668,7 @@ jQuery(function ($) {
 
 				gsap.to("#hero-caption .hero-title", {
 					duration: 1,
-					yPercent: 60,
+					yPercent: 160,
 					opacity: 0.2,
 					filter: "blur(5px)",
 					ease: Linear.easeNone,
@@ -681,7 +681,7 @@ jQuery(function ($) {
 				});
 
 				gsap.to("#hero-caption .hero-subtitle span", {
-					yPercent: -30,
+					yPercent: -130,
 					color: "transparent",
 					duration: 1,
 					stagger: 0.05,
@@ -765,7 +765,7 @@ jQuery(function ($) {
 			gsap.utils.toArray(".new-hero-title .hero-title-placeholder div span").forEach((span) => {
 				const spans = Array.from(span.parentNode.querySelectorAll("span"));
 				const maxWidth = Math.max(...spans.map(s => s.offsetWidth));
-
+			
 				gsap.to(span, {
 					scrollTrigger: {
 						trigger: heroCaption,
@@ -778,10 +778,12 @@ jQuery(function ($) {
 						const currentWidth = span.offsetWidth;
 						return -(maxWidth - currentWidth) / 2;
 					},
+					
 					duration: 1,
 					ease: Linear.easeNone,
 				});
 			});
+			
 
 
 			ScrollTrigger.create({
@@ -869,24 +871,25 @@ jQuery(function ($) {
 
 				gsap.to('#ball', {
 					duration: 0.3,
-					borderWidth: '2px',
+					borderWidth: '0px',
 					scale: 1.4,
-					borderColor: "#fa821d",
-					backgroundColor: "#fa821d"
+					borderColor: "rgba(255, 255, 255, 0.2)",
+					backgroundColor: "rgba(255, 255, 255, 0.2)",
+					backdropFilter: "blur(3px)"
 				});
 				gsap.to('#ball-loader', {
 					duration: 0.2,
-					borderWidth: '2px',
-					top: 2,
-					left: 2
+					borderWidth: '0px',
+					top: 15,
+					left: 15
 				});
 
-				$("#ball").append('<img class="eyes-icon" src="img/eyes.png" style="transform:scale(0.75);">');
+				$("#ball").append('<img class="eyes-icon" src="img/sign.png" style="transform:scale(2);">');
 
 				let imageIndex = 0;
 				const images = [
-					'<img class="eyes-icon" src="img/eyes.png" style="transform:scale(0.75);">',
-					'<img class="eyes-icon" src="img/eyes.png" style="transform:scale(0.75);">'
+					'<img class="eyes-icon" src="img/sign.png" style="transform:scale(2);">',
+					'<img class="eyes-icon" src="img/sign.png" style="transform:scale(2);">'
 				];
 
 				function switchImage() {
@@ -934,7 +937,7 @@ jQuery(function ($) {
 					ease: Linear.easeNone,
 					scrollTrigger: {
 						trigger: "#hero-caption",
-						start: "top -30%",
+						start: "top 30%",
 						end: '+=50%',
 						scrub: true,
 					},

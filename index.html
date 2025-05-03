@@ -35,6 +35,49 @@
         line-height: calc((1rem + 14vw) / 2);
         letter-spacing: -0.2vw;
     }
+    #hero {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 0;
+    /* background-image: url('img/bg/bg3.png'); */
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.azmi-title{
+    font-size: large;
+}
+@media only screen and (max-width: 768px) {
+    .azmi-title{
+    font-size: 12px;
+}
+}
+
+@media only screen and (max-width: 767px) {
+    .caption-animated .hero-title::before {
+        opacity: 0.6;
+        left: 0;
+        top: -53px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .caption-animated .hero-title::after {
+        opacity: 0.6;
+        right: -33px;
+        bottom: -129px;
+        /* width: 100%; */
+        top: auto;
+        justify-items: center;
+        width: 100px;
+    }
+}
+
+
 </style>
 
 
@@ -65,7 +108,7 @@
         <div class="cd-index cd-main-content">
 
             <!-- Page Content -->
-            <div id="clapat-page-content" class="dark-content" data-bgcolor="#c8c8c8">
+            <div id="clapat-page-content" class="light-content" data-bgcolor="#000">
 
                 <!-- Header -->
                 <header class="clapat-header classic-menu invert-header" data-menucolor="#0c0c0c">
@@ -93,7 +136,7 @@
                             <div class="nav-height">
                                 <ul data-breakpoint="1025" class="flexnav">
                                     <li class="menu-timeline link"><a class="ajax-link active"
-                                            data-type="page-transition" href="#!">
+                                            data-type="page-transition" href="index.html">
                                             <div class="before-span"><span data-hover="Index">Index</span></div>
                                         </a></li>
                                     <li class="menu-timeline link"><a class="ajax-link" data-type="page-transition"
@@ -177,9 +220,16 @@
                                     class="content-full-width parallax-scroll-caption text-align-center hero-full-caption">
                                     <div class="inner">
 
-                                        <h1 class="hero-title  caption-timeline" data-infoTextBefore="Welcome"
-                                            data-infoTextAfter="Est. 2025">
-                                            <div><span class="">Tanvi</span></div>
+                                        <!-- <h1 class="hero-title  caption-timeline" data-infoTextBefore="Welcome"
+                                        style="    width: 270px;
+"
+                                            data-infoTextAfter="Est.d 2025">
+                                            <div><span class=""><img src="/img/tanvi.png" width="150px"></span></div>
+                                        </h1> -->
+
+
+                                        <h1 class="hero-title azmi-title caption-timeline" data-infoTextBefore="Welcome" data-infoTextAfter="Est. 2025">
+                                            <div><span>Tanvi Azmi</span></div>
                                         </h1>
 
                                         <div class="hero-subtitle caption-timeline onload-shuffle ">
@@ -206,14 +256,14 @@
                                 </div>
                             </div>
                             <div id="hero-interaction">
-                                <div class="hero-column col-left">
+                                <!-- <div class="hero-column col-left">
                                     <div class="col-img-wrapper small-img"><img src="img/6.png" alt=""></div>
                                     <div class="col-img-wrapper large-img"><img src="img/bg/2.jpeg" alt=""></div>
                                 </div>
                                 <div class="hero-column col-right">
                                     <div class="col-img-wrapper large-img"><img src="img/bg/1.jpeg" alt=""></div>
                                     <div class="col-img-wrapper small-img"><img src="img/bg/4.jpeg" alt=""></div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <!--/Hero Section -->
@@ -229,7 +279,7 @@
 
 
                                         <!-- Row -->
-                                        <div class="content-row full row_padding_top row_padding_left row_padding_right light-section fadeout-element"
+                                        <div class="content-row full row_padding_top row_padding_left row_padding_right dark-section fadeout-element"
                                             data-bgcolor="transparent">
 
                                             <div class="landing-intro-wrapper">
@@ -255,7 +305,7 @@
 
 
                                         <!-- Row -->
-                                        <div class="content-row full light-section row_padding_left row_padding_right row_padding_bottom fadeout-element"
+                                        <div class="content-row full dark-section row_padding_left row_padding_right row_padding_bottom fadeout-element"
                                             data-bgcolor="transparent">
 
                                             <hr>
@@ -273,7 +323,7 @@
                                                     </div>
 
                                                 </div> -->
-                                                <img src="/img/img1.png" style="border-radius: 10px;" alt="">
+                                                <img src="/img/tanvi.png" style="border-radius: 10px;" alt="" width="300px">
                                                 <hr>
                                                 <hr>
                                                 <hr>
@@ -312,10 +362,10 @@
                                                         <div class="snap-slide trigger-item change-header-color">
                                                             <div class="img-mask">
                                                                 <div class="section-image trigger-item-link">
-                                                                    <img src="img/noorin/1.png"
+                                                                    <img src="img/actoress/bg.png"
                                                                         class="item-image grid__item-img" alt="">
                                                                 </div>
-                                                                <img src="img/noorin/1.png"
+                                                                <img src="img/actoress/bg.png"
                                                                     class="grid__item-img grid__item-img--large" alt="">
                                                             </div>
                                                         </div>
@@ -323,10 +373,10 @@
                                                         <div class="snap-slide trigger-item change-header-color">
                                                             <div class="img-mask">
                                                                 <div class="section-image trigger-item-link">
-                                                                    <img src="img/pathu/2.png"
+                                                                    <img src="img/influencers/bg.png"
                                                                         class="item-image grid__item-img" alt="">
                                                                 </div>
-                                                                <img src="img/pathu/2.png"
+                                                                <img src="img/influencers/bg.png"
                                                                     class="grid__item-img grid__item-img--large" alt="">
                                                             </div>
                                                         </div>
@@ -334,10 +384,10 @@
                                                         <div class="snap-slide trigger-item change-header-color">
                                                             <div class="img-mask">
                                                                 <div class="section-image trigger-item-link">
-                                                                    <img src="img/prarthana/bg.png"
+                                                                    <img src="img/wedding/bg.png"
                                                                         class="item-image grid__item-img" alt="">
                                                                 </div>
-                                                                <img src="img/prarthana/bg.png"
+                                                                <img src="img/wedding/bg.png"
                                                                     class="grid__item-img grid__item-img--large" alt="">
                                                             </div>
                                                         </div>
@@ -345,10 +395,10 @@
                                                         <div class="snap-slide trigger-item change-header-color">
                                                             <div class="img-mask">
                                                                 <div class="section-image trigger-item-link">
-                                                                    <img src="img/custome/bg.png"
+                                                                    <img src="img/others/bg.png"
                                                                         class="item-image grid__item-img" alt="">
                                                                 </div>
-                                                                <img src="img/custome/bg.png"
+                                                                <img src="img/others/bg.png"
                                                                     class="grid__item-img grid__item-img--large" alt="">
                                                             </div>
                                                         </div>
@@ -366,21 +416,21 @@
                                                                     class="item-image grid__item-img" alt="">
                                                             </div>
                                                             <a class="slide-link" data-type="page-transition"
-                                                                href="#!"></a>
-                                                        </div>
-
-                                                        <div class="thumb-slide" data-centerLine="OPEN">
-                                                            <div class="thumb-slide-img">
-                                                                <img src="img/pathu/icon.JPG"
-                                                                    class="item-image grid__item-img" alt="">
-                                                            </div>
-                                                            <a class="slide-link" data-type="page-transition"
-                                                                href="#!"></a>
+                                                                href="/actor.html"></a>
                                                         </div>
 
                                                         <div class="thumb-slide" data-centerLine="OPEN">
                                                             <div class="thumb-slide-img">
                                                                 <img src="img/prarthana/icon.jpeg"
+                                                                    class="item-image grid__item-img" alt="">
+                                                            </div>
+                                                            <a class="slide-link" data-type="page-transition"
+                                                                href=""></a>
+                                                        </div>
+
+                                                        <div class="thumb-slide" data-centerLine="OPEN">
+                                                            <div class="thumb-slide-img">
+                                                                <img src="img/wedding/icon.png"
                                                                     class="item-image grid__item-img" alt="">
                                                             </div>
                                                             <a class="slide-link" data-type="page-transition"
@@ -404,34 +454,34 @@
                                                     <div class="snap-slider-captions-wrapper content-full-width">
 
                                                         <div class="snap-slide-caption">
-                                                            <div class="slide-title"><span>The girl of beauty</span></div>
+                                                            <div class="slide-title"><span>Actress Collections</span></div>
                                                             <div class="slide-current"><span>01</span></div>
                                                             <div class="slide-counter"><span>04</span></div>
-                                                            <div class="slide-subtitle"><span></span>
+                                                            <div class="slide-subtitle"><span>Azmi Creations</span>
                                                             </div>
                                                         </div>
 
                                                         <div class="snap-slide-caption">
-                                                            <div class="slide-title"><span>Stena Air</span></div>
+                                                            <div class="slide-title"><span>Influencer Collections</span></div>
                                                             <div class="slide-current"><span>02</span></div>
                                                             <div class="slide-counter"><span>04</span></div>
-                                                            <div class="slide-subtitle"><span>Graphic Design</span>
+                                                            <div class="slide-subtitle"><span>Azmi Creations</span>
                                                             </div>
                                                         </div>
 
                                                         <div class="snap-slide-caption change-header1"
                                                             data-centerLine="OPEN">
-                                                            <div class="slide-title"><span>Lounge Chair</span></div>
+                                                            <div class="slide-title"><span>Wedding Creations</span></div>
                                                             <div class="slide-current"><span>03</span></div>
                                                             <div class="slide-counter"><span>04</span></div>
-                                                            <div class="slide-subtitle"><span>Photography</span></div>
+                                                            <div class="slide-subtitle"><span>Azmi Photography</span></div>
                                                         </div>
 
                                                         <div class="snap-slide-caption">
-                                                            <div class="slide-title"><span>Invincibles</span></div>
+                                                            <div class="slide-title"><span>Other Collections</span></div>
                                                             <div class="slide-current"><span>04</span></div>
                                                             <div class="slide-counter"><span>04</span></div>
-                                                            <div class="slide-subtitle"><span>Video</span></div>
+                                                            <div class="slide-subtitle"><span>Azmi Photography</span></div>
                                                         </div>
 
                                                     </div>
