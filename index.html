@@ -213,6 +213,13 @@
 
                         <!-- Hero Section -->
                         <div id="hero" style="background-image: url('/core-images/bg.png');">
+                            <style>
+                                @media (max-width: 767px) {
+                                    #hero {
+                                        background-position: 30% center !important;
+                                    }
+                                }
+                            </style>
                             <div id="hero-styles">
                                 <div id="hero-caption"
                                     class="content-full-width parallax-scroll-caption text-align-center hero-full-caption">
@@ -308,16 +315,22 @@
 
                                                 <hr>
 
-                                                <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 60px; min-height: 400px; padding: 40px 0;">
+                                                <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 60px; min-height: 400px; padding: 140px 0; margin-top: 60px;" class="responsive-margin-top">
+                                                <style>
+                                                @media (max-width: 767px) {
+                                                    .responsive-margin-top {
+                                                        margin-top: 10px !important;
+                                                    }
+                                                }
+                                                </style>
                                                     <div style="flex: 0 0 320px; display: flex; justify-content: center;">
                                                         <img src="/img/tanvi.png" alt="Tanvi Azmi" style="border-radius: 18px; box-shadow: 0 8px 32px rgba(0,0,0,0.18); width: 100%; max-width: 320px; object-fit: cover;">
                                                     </div>
-                                                    <div style="flex: 1 1 350px; max-width: 540px; background: rgba(30,30,30,0.85); border-radius: 18px; padding: 36px 32px; box-shadow: 0 4px 24px rgba(0,0,0,0.10); display: flex; flex-direction: column; align-items: flex-start;">
-                                                        <h2 style="margin-top: 0; margin-bottom: 18px; font-size: 2.1rem; font-family: 'Playfair Display', serif; color: #fa821d; letter-spacing: -1px;">Meet Tanvi Azmi</h2>
+                                                    <div style="flex: 1 1 350px; max-width: 540px;   padding: 36px 32px; box-shadow: 0 4px 24px rgba(0,0,0,0.10); display: flex; flex-direction: column; align-items: flex-start;">
                                                         <p class="has-opacity" style="text-align: left; font-size: 1.13rem; line-height: 1.7; color: #f3f3f3; margin-bottom: 28px;">
                                                             I’m Tanvi Azmi, a visual artist with a sharp eye for storytelling. From photography and videography to editing and visual arts, I create content that feels current, intentional, and full of personality. I started doing shoots at 16 and now work across fashion, portraits, and curated events. I also host intimate weddings and gatherings, often with a women-only crew—creating safe, collaborative spaces behind the lens. My style is thoughtful but bold, blending creative direction with clean execution to bring every vision to life.
                                                         </p>
-                                                        <a class="ajax-link button-link" data-type="page-transition" href="/about.html" style="text-decoration: none;">
+                                                        <!-- <a class="ajax-link button-link" data-type="page-transition" href="/about.html" style="text-decoration: none;">
                                                             <div class="button-wrap right has-animation" style="margin-top: 0;">
                                                                 <div class="icon-wrap parallax-wrap">
                                                                     <div class="button-icon parallax-element">
@@ -326,7 +339,7 @@
                                                                 </div>
                                                                 <div class="button-text sticky right" style="color: #fa821d;"><span data-hover="Read More">Read More</span></div>
                                                             </div>
-                                                        </a>
+                                                        </a> -->
                                                     </div>
                                                 </div>
 
